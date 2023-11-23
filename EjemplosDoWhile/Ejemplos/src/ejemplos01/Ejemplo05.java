@@ -1,7 +1,8 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+Este codigo, usa tres variables para guardar la informacion de la multiplicacion
+de numeros anteriores que al ciclo limitados por la variable potencia 
+que dicta el numero de veces que se repite el ciclo.
+Osea elevar a una potencia a un numero dado.
  */
 package ejemplos01;
 
@@ -19,9 +20,9 @@ public class Ejemplo05 {
         // 6. resultado, i[0, n]
         int resultado;
         // numero <-- 4
-        numero = 4;
+        numero = 3;
         // 8. potencia <-- 3
-        potencia = 3;
+        potencia = 2;
         // 9. resultado <-- 1
         resultado = 1;
 
