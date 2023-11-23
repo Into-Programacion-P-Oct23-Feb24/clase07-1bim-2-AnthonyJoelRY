@@ -7,6 +7,10 @@
  sean ingresados por teclador por el usuario.
  */
 package ejemplos02;
+
+import java.util.Locale;
+import java.util.Scanner;
+
 /**
  *
  * @author reroes
@@ -14,6 +18,8 @@ package ejemplos02;
 public class Ejemplo05 {
 
     public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        entrada.useLocale(Locale.US);
         // 2. numero, i[0, n]
         int numero;
         // 3. potencia, i[0, n]
@@ -28,7 +34,10 @@ public class Ejemplo05 {
         resultado = 1;
 
         int contador = 1;
-
+        System.out.println("Ingrese la base");
+        numero = entrada.nextInt();
+        System.out.println("Ingrese a la potencia que desea elavar");
+        potencia = entrada.nextInt();
         do {
             resultado = resultado * numero;
             contador = contador + 1;
