@@ -33,21 +33,28 @@ public class Ejemplo08 {
 
         do {
             // para manejar el signo asociado 
+            // 1 % 2 = 0 //false
+            // 2 % 2 = 0 //verdadero
+            // 3 % 2 = 0 //falso
             if (denominador % 2 == 0) {
-                signo = "+";
+                signo = "+";// +
             } else {
-                signo = "-";
+                signo = "-";// -
             }
-            
+                                        // -1/1 
+                                        // -1/1 +1/2
+                                        // -1/1 +1/2 -1/3 
             cadena = String.format("%s%s%d/%d ", 
                     cadena,
                     signo,
                     numerador, 
                     denominador);
-            denominador = denominador + 1;
+            denominador = denominador + 1;// 1 + 1 = 2
+                                          // 2 + 1 = 3
+                                          // 3 + 1 = 4
 
         } while (denominador <= limite);
-
+    
         System.out.println(cadena);
 
     }
