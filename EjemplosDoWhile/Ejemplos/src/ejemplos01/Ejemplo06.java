@@ -36,7 +36,7 @@ public class Ejemplo06 {
             operacion = tabla * contador;
             System.out.printf("%d x %d = %d\n", tabla, contador, operacion);
             contador = contador + 1;
-        } while (contador <= 10);
+        } while (contador <= 20);
 
     }
 }
