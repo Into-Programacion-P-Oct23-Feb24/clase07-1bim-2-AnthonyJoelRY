@@ -37,6 +37,7 @@ public class Ejemplo09 {
         do {
             System.out.println("Ingrese su nombre");
             nombre = entrada.nextLine();
+            String nombre2 = nombre.toLowerCase();
             System.out.println("Ingrese calificaciones, solo valor entero");
             nota = entrada.nextInt();
             // agrego valor al acumulador
@@ -59,11 +60,11 @@ public class Ejemplo09 {
             // cadena
             cadenaFinal = String.format("%scalificacion %d del estudiante %s\n",
                     cadenaFinal,
-                    nota, nombre);
+                    nota, nombre2);
         } while (bandera); // (bandera==true)
         promedio = (double) suma / contador_calificaciones;
 
         // promedio = suma / contador_calificaciones;
-        System.out.printf("%s\nPromedio de calificaciones: %.2f", cadenaFinal, promedio);
+        System.out.printf("%s\nPromedio de calificaciones: %.2f\n", cadenaFinal, promedio);
     }
 }
