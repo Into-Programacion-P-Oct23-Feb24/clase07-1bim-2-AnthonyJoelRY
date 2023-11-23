@@ -57,14 +57,13 @@ public class Ejemplo09 {
             // se limpia el buffer, pues el primer valor
             // que se solicita al inicio del ciclo es una
             // cadena
-
+            cadenaFinal = String.format("%scalificacion %d del estudiante %s\n",
+                    cadenaFinal,
+                    nota, nombre);
         } while (bandera); // (bandera==true)
+        promedio = (double) suma / contador_calificaciones;
 
         // promedio = suma / contador_calificaciones;
-        promedio = (double) suma / contador_calificaciones;
-        cadenaFinal = String.format("%scalificacion %d del estudiante %s\nPromedio de calificaciones: %.2f",
-                cadenaFinal,
-                nota, nombre, promedio);
-        System.out.printf("%s\n", cadenaFinal);
+        System.out.printf("%s\nPromedio de calificaciones: %.2f", cadenaFinal, promedio);
     }
 }
