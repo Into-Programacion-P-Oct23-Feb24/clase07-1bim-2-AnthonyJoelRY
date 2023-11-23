@@ -31,7 +31,7 @@ public class Ejemplo06 {
         int tabla;
         int operacion;
         int contador = 1;
-        int limite;
+        int limite=;
         
         do {
             operacion = tabla * contador;
