@@ -52,6 +52,8 @@ public class Ejemplo09 {
 
         // promedio = suma / contador_calificaciones;
         promedio = (double) suma / contador_calificaciones;
+        // (double) usamos esta expresion con el fin de cambiar el valor de 
+        // la variable suma de entero a o double 
         cadenaFinal = String.format("%s\nPromedio de calificaciones: %.2f",
                 cadenaFinal,
                 promedio);
