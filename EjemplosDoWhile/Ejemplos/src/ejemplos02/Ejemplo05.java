@@ -34,7 +34,7 @@ public class Ejemplo05 {
         resultado = 1;
 
         int contador = 1;
-        System.out.println("Ingrese la base");
+        System.out.println("Ingrese la base del numero que desea elevar");
         numero = entrada.nextInt();
         System.out.println("Ingrese a la potencia que desea elavar");
         potencia = entrada.nextInt();
@@ -43,6 +43,6 @@ public class Ejemplo05 {
             contador = contador + 1;
         } while (contador <= potencia);
 
-        System.out.printf("%d\n", resultado);
+        System.out.printf("resultado: %d\n", resultado);
     }
 }
